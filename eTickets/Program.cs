@@ -15,7 +15,8 @@ namespace eTickets
         {
             CreateHostBuilder(args).Build().Run();
         }
-
+        //This is used to create the host for the application, which will listen for incoming HTTP requests and route them to the appropriate
+        //controllers and actions.
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
